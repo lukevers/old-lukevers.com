@@ -3,4 +3,60 @@
 body {
 	font-family: 'Helvetica Neue';
 	background-color: #FFF;
+	color: #333;
+	margin: 0;
+}
+
+/* ========== Links ========== */
+
+a {
+	
+}
+
+a:hover {
+	
+}
+
+/* ========== Navbar ========== */
+
+.navbar {
+	background-color: #EEE;
+}
+
+.navbar li a, .navbar a {
+	color: #333;
+}
+
+.navbar li a:hover {
+	color: #000;
+}
+
+.navbar .active a,
+.navbar .active a:hover {
+	background-color: #333;
+	color: #EEE;
+}
+
+/* ========== Sections ========== */
+
+.extra {
+	margin: 50px 0px;
+}
+
+/* ========== About ========== */
+
+#about {
+	height: 1000px;
+}
+
+/* ========== Contact ========== */
+
+#contact {
+	height: 1000px;
+}
+
+/* ========== Projects ========== */
+
+#projects {
+	height: 1000px;
 }

@@ -3,28 +3,39 @@
 	<head>
     	<title>Luke Evers</title>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" href="/css/bootstrap.css">
-        <link rel="stylesheet" href="/css/style.css">
-        <script type="text/javascript" src="/js/jquery.js"></script>
-        <script type="text/javascript" src="/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
     </head>
-    <body>
-    	<div class="navbar">
-        	<a class="navbar-brand" href="/">Luke Evers</a>
-           	<ul class="nav navbar-nav">
-     	       <li class="active"><a href="#about">About</a></li>
-        	    <li><a href="#contact">Contact</a></li>
-            	<li><a href="#projects">Projects</a></li>
-     		</ul>
+    <body data-spy="scroll" data-target="#navbar" data-offset="50">
+    	<div class="navbar navbar-fixed-top" id="navbar">
+        	<div class="container">
+            	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Luke Evers</a>
+                <div class="nav-collapse collapse navbar-responsive-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li><a href="#projects">Projects</a></li>
+					</ul>
+				</div>
+            </div>
 		</div>
-        <div id="about">
-        	<h1>about</h1>
-        </div>
-        <div id="contact">
-        	<h1>contact</h1>
-        </div>
-        <div id="projects">
-        	<h1>projects</h1>
+        <div class="extra">
+            <div id="about">
+                about
+            </div>
+            <div id="contact">
+                contact
+            </div>
+            <div id="projects">
+                projects
+            </div>
         </div>
     </body>
 </html>
