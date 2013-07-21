@@ -1,41 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<title>Luke Evers</title>
-        <meta charset="utf-8"/>
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/style.css">
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/bootstrap.js"></script>
-    </head>
-    <body data-spy="scroll" data-target="#navbar" data-offset="50">
-    	<div class="navbar navbar-fixed-top" id="navbar">
-        	<div class="container">
-            	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">Luke Evers</a>
-                <div class="nav-collapse collapse navbar-responsive-collapse">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
-						<li><a href="#projects">Projects</a></li>
-					</ul>
-				</div>
-            </div>
-		</div>
-        <div class="extra">
-            <div id="about">
-                about
-            </div>
-            <div id="contact">
-                contact
-            </div>
-            <div id="projects">
-                projects
-            </div>
-        </div>
-    </body>
+  <head>
+    <title>Luke Evers</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+  </head>
+  <body>
+    <div id="about">
+      <h2>hello!</h2>
+      <img src="assets/img/me.png" id="me">
+      <h5>I'm Luke Evers and I like to program.</h5>
+      <h6>I'm a Computer Science major at <a href="http://www.rowan.edu/">Rowan University</a>.</h6>
+    </div>
+    <div id="contact">
+      <a href="mailto:luke@lukevers.com" class="icon-envelope"></a>
+      <a href="https://github.com/lukevers" class="icon-github"></a>
+      <a href="http://stackoverflow.com/users/2166043/luke-evers" class="icon-stackoverflow"></a>
+      <a href="https://twitter.com/lukevers_" class="icon-twitter"></a>
+      <a href="http://blog.lukevers.com/" class="icon-tumblr"></a>
+      <a href="https://www.facebook.com/lukeevers" class="icon-facebook"></a>
+      <a href="http://www.reddit.com/user/lukevers/" class="icon-reddit"></a>
+    </div>
+    <div id="projects">
+      <div class="text-left">
+        <h2>Projects</h2>
+      </div>
+      <table class="table table-bordered table-striped responsive-utilities">
+        <th>Name</th>
+        <th>Description</th>
+        <th>Language(s)</th>
+        <th>GitHub Repo</th>
+        <th>Example</th>
+        <tr>
+          <td>NodeAtlas</td>
+          <td>Federated node mapping for mesh networks</td>
+          <td>Go, Javascript</td>
+          <td><a href="https://github.com/ProjectMeshnet/nodeatlas">ProjectMeshnet/nodeatlas</a></td>
+          <td><a href="http://map.projectmeshnet.org/">map.projectmeshnet.org</a></td>
+        </tr>
+        <tr>
+          <td>Kittens</td>
+          <td>Modular IRC bot</td>
+          <td>Javascript (node.js)</td>
+          <td><a href="https://github.com/lukevers/kittens">lukevers/kittens</a></td>
+          <td class=""><a href="https://chat.projectmeshnet.org/?channels=#marylandmesh">Efnet #marylandmesh</a></td>
+        </tr>
+        <tr>
+          <td>Grove</td>
+          <td>Git self-hosting for developers</td>
+          <td>Go</td>
+          <td><a href="https://github.com/SashaCrofter/grove">SashaCrofter/grove</a></td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>Cat Cache!</td>
+          <td>The computational cuteness engine</td>
+          <td>Javascript (node.js)</td>
+          <td><a href="https://github.com/lukevers/catca.ch">lukevers/catca.ch</a></td>
+          <td>N/A</td>
+        </tr>
+      </table>
+      <div class="text-left">
+        <script data-gittip-username="lukevers" src="https://www.gittip.com/assets/widgets/0002.js"></script>
+      </div>
+    </div>
+  </body>
 </html>

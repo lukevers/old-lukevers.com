@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+body {
+	font-family: 'Helvetica Neue';
+	color: #333;
+	margin: 0;
+	background: url(../img/linedpaper.png);
+}
+
+/* ========== Links ========== */
+
+a {
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    transition: all .2s linear;
+	text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+
+/* ========== Headers ========== */
+
+h1, h2, h3, h4, h5, h6 {
+	color: #333;
+	margin: 0;
+	font-weight: 900;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+/* ========== Navbar ========== */
+
+.navbar {
+	background-color: #111;
+}
+
+.navbar li a, .navbar a {
+	color: #FFF;
+}
+
+.navbar li a:hover {
+	color: #AAA;
+}
+
+.navbar .active a,
+.navbar .active a:hover {
+	background-color: rgba(255, 255, 255, .3);
+	color: #FFF;
+}
+
+/* ========== Sections ========== */
+
+#about, #contact, #projects {
+	text-align: center;
+	padding: 50px;
+	min-width: 400px;
+}
+
+/* ========== About ========== */
+
+#about {
+}
+
+#about #me {
+	border-radius: 100px;
+	height: 200px;
+	width: 200px;
+}
+
+/* ========== Contact ========== */
+
+#contact, .key {
+	background: url(../img/subtle_grunge.png);
+}
+
+#contact a {
+	color: #333;
+	font-size: 32px;
+	margin: 50px;
+}
+
+#contact a:hover {
+	text-decoration: none;
+	color: #999;
+}
+
+/* ========== Projects ========== */
+
+#projects {
+	
+}
