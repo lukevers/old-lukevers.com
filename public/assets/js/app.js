@@ -12,8 +12,8 @@ $(document).ready(function() {
 
 	 	 $('.photo').fadeIn();
 	 	 
-	 	 $('#'+id).toggleClass('fade active');
-	 	 $('#one').toggleClass('fade active');
+	 	 $('#'+id).toggleClass('active');
+	 	 $('#one').toggleClass('active');
 	 });
 
 	 $('#two').bind('click', function() {
@@ -22,8 +22,8 @@ $(document).ready(function() {
 	 	 $('.photo2').fadeIn();
  	 	 $('.photo').fadeOut(500);
 	 	 
-	 	 $('#'+id).toggleClass('fade active');
-	 	 $('#two').toggleClass('fade active');
+	 	 $('#'+id).toggleClass('active');
+	 	 $('#two').toggleClass('active');
 	 });
 
 	 $('#three').bind('click', function() {
@@ -32,8 +32,8 @@ $(document).ready(function() {
  	 	$('.photo3').show();
  	 	$('.photo, .photo2').fadeOut(500);
 
-	 	 $('#'+id).toggleClass('fade active');
-	 	 $('#three').toggleClass('fade active');
+	 	 $('#'+id).toggleClass('active');
+	 	 $('#three').toggleClass('active');
 	 });
 
 	 // Navbar background
@@ -68,6 +68,6 @@ $(document).ready(function() {
 	 			// if this happens, someone fucked shit up
 	 			break;
 	 	}
-	 }, 4000);
+	 }, 3000);
 
 });
