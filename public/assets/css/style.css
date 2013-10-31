@@ -26,14 +26,47 @@ a:hover, a:active, a:focus {
 	text-decoration: none;
 }
 
-/* -- Nav -- */
+/* -- Navbar -- */
 
-.nav {
+.navbar {
+	position: fixed;
+	z-index: 4000;
+	padding: 25px 0px;
+	width: 100%;
+	text-align: right;
+	-o-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	-webkit-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+.navbar ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.navbar ul a {
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 900;
+}
+
+.navbar ul a li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+/* -- Name -- */
+
+.name {
+	top: 80%;
 	padding: 50px;
 	position: absolute;
 	z-index: 3000;
 	color: #FFF;
-	font-size: 32px;
+	font-size: 64px;
 	font-weight: 900;
 }
 
@@ -45,10 +78,6 @@ ul.slide {
 	list-style: none;
 	top: 50%;
 	right: 50px;
-}
-
-.hidden {
-	display: none;
 }
 
 ul.slide li.button {
@@ -132,10 +161,10 @@ ul.slide li.button.active {
 	background-image: url(../img/s3.jpg);
 }
 
-/* -- Projects -- */
+/* -- About -- */
 
-.projects {
-	height: 300px;
+.about {
+	height: 1000px;
 }
 
 /* -- * -- */
