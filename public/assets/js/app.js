@@ -68,6 +68,6 @@ $(document).ready(function() {
 	 			// if this happens, someone fucked shit up
 	 			break;
 	 	}
-	 }, 3000);
+	 }, 5000);
 
 });

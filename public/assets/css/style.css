@@ -165,3 +165,27 @@ ul.slide li.button.active {
 
 /* -- * -- */
 
+/* Tablets */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+{
+
+/* Media Specific Content */
+
+}
+ 
+/* Mobile Devices */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+{
+	/* -- Navbar -- */
+
+	.navbar {
+		display: none;
+	}
+
+	/* -- End Mobile -- */
+}
+
