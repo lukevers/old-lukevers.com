@@ -5,8 +5,7 @@ html, body {
 }
 
 body {
-	font-family: Helvetica;
-	font-size: 12px;
+	font-family: 'Open Sans';
 	color: #333;
 	margin: 0;
 }
@@ -20,10 +19,12 @@ a {
 	-ms-transition: all .2s linear;
 	transition: all .2s linear;
 	text-decoration: none;
+	color: #09F;
 }
 
 a:hover, a:active, a:focus {
 	text-decoration: none;
+	color: #06C;
 }
 
 /* -- Navbar -- */
@@ -61,13 +62,19 @@ a:hover, a:active, a:focus {
 /* -- Name -- */
 
 .name {
-	top: 80%;
+	top: 60%;
 	padding: 50px;
 	position: absolute;
 	z-index: 3000;
 	color: #FFF;
-	font-size: 64px;
+	font-size: 80px;
 	font-weight: 900;
+}
+
+.name span {
+	display: block;
+	font-size: 20px;
+	line-height: 0px;
 }
 
 /* -- Slider -- */
@@ -157,35 +164,71 @@ ul.slide li.button.active {
 	background-image: url(../img/s3.jpg);
 }
 
-/* -- About -- */
+/* -- Panels -- */
 
-.about {
-	height: 1000px;
+.panel {
+	padding: 50px;
+}
+
+.panel .body {
+	line-height: 32px;
+	font-size: 20px;
+}
+
+.panel h1 {
+	margin: 0;
+	font-size: 80px;
+	color: #222;
+}
+
+.panel h1 span {
+	font-weight: 400;
+	display: block;
+	line-height: 30px;
+	font-size: 64px;
+}
+
+/* -- Projects -- */
+
+.project {
+	height: 300px;
+	width: 100%;
+}
+
+.project .title {
+	background-color: rgba(0, 0, 0, .8);
+	color: #FFF;
+	padding: 10px 10px 0px 10px;
+}
+
+.project .desc {
+	background-color: rgba(0, 0, 0, .8);
+	color: #FFF;
+	padding: 0px 10px 10px 10px;
+	font-size: 14px;
+}
+
+a:hover .hov {
+	display: block;
+}
+
+.hov {
+	display: none;
+}
+
+.maryland {
+	background-image: url(../img/maryland.png);
+	background-position: top center;
+}
+
+.vegasix {
+	background-image: url(../img/vegasix.png);
 }
 
 /* -- * -- */
 
-/* Tablets */
-@media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px)
-{
-
-/* Media Specific Content */
-
+.olive {
+	background-image: url(../img/s4.jpg);
+	height: 300px;
+	width: 100%;
 }
- 
-/* Mobile Devices */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 480px)
-{
-	/* -- Navbar -- */
-
-	.navbar {
-		display: none;
-	}
-
-	/* -- End Mobile -- */
-}
-

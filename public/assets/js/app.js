@@ -50,19 +50,19 @@ $(document).ready(function() {
 	 		case "one":
 	 			$('.photo2').fadeIn();
 	 			$('.photo').fadeOut(500);
-	 			$('#'+id).toggleClass('fade active');
-	 		 	$('#two').toggleClass('fade active');
+	 			$('#'+id).toggleClass('active');
+	 		 	$('#two').toggleClass('active');
 	 			break;
 	 		case "two":
 	 			$('.photo3').show();
 	 			$('.photo, .photo2').fadeOut(500);
-	 			$('#'+id).toggleClass('fade active');
-	 		 	$('#three').toggleClass('fade active');
+	 			$('#'+id).toggleClass('active');
+	 		 	$('#three').toggleClass('active');
 	 			break;
 	 		case "three":
 	 			$('.photo').fadeIn();
-	 			$('#'+id).toggleClass('fade active');
-	 		 	$('#one').toggleClass('fade active');
+	 			$('#'+id).toggleClass('active');
+	 		 	$('#one').toggleClass('active');
 	 			break;
 	 		default:
 	 			// if this happens, someone fucked shit up
