@@ -80,6 +80,19 @@ a:hover {
 	font-size: 5em;
 }
 
+/* <==> Links <==> */
+
+.links {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #FFF;
+	color: #333;
+	padding: 1em;
+	line-height: .5em;
+	cursor: pointer;
+}
+
 /* <==> Sections <==> */
 
 .section {
@@ -109,16 +122,6 @@ section {
 	text-align: right;
 }
 
-.contact a {
-	color: #333;
-	font-size: 3em;
-	margin: 1em;
-}
-
-.contact a:hover {
-	color: #999;
-}
-
 /* <==> iPhone 4S and less && iPad Mini && iPad <==> */
 @media screen and (device-aspect-ratio: 3/4) {
 
@@ -140,10 +143,6 @@ section {
 
 	.about h1 {
 		text-align: center;
-	}
-
-	.contact a {
-		font-size: 4em;
 	}
 
 	.wrap {
@@ -177,10 +176,6 @@ section {
 
 	.about {
 		font-size: 3em;
-	}
-
-	.contact a {
-		font-size: 4em;
 	}
 
 	.about h1 {

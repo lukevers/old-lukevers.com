@@ -1,4 +1,10 @@
 $(document).ready(function() {
+	// Links menu
+	$('.links').bind('click', function() {
+		
+	});
+
+	// Center logo
 	$(window).resize(function(){
 		$('.logo').css({
 			position:'absolute',
