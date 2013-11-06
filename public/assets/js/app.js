@@ -1,8 +1,4 @@
 $(document).ready(function() {
-	// Links menu
-	$('.links').bind('click', function() {
-		
-	});
 
 	// Center logo
 	$(window).resize(function(){
@@ -22,4 +18,5 @@ $(document).ready(function() {
 		horizontalScrolling: false,
 		verticalOffset: 0
 	});
+	
 });
