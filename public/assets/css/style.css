@@ -22,20 +22,6 @@ h1 {
 	font-size: 3em;
 }
 
-a, a li {
-	color: #696;
-	text-decoration: none;
-	-webkit-transition: all .2s linear;
-	-moz-transition: all .2s linear;
-	-o-transition: all .2s linear;
-	-ms-transition: all .2s linear;
-	transition: all .2s linear;
-}
-
-a:hover {
-	color: #333;
-}
-
 /* <==> Bottom <==> */
 
 .bottom {
@@ -80,35 +66,6 @@ a:hover {
 	font-size: 5em;
 }
 
-/* <==> Sections <==> */
-
-.section {
-	padding: 2em;
-	text-align: center;
-}
-
-.section h1, .section h2 {
-	text-align: left;
-}
-
-section {
-	display: inline-block;
-	text-align: left;
-	width: 50%;
-}
-
-.wrap {
-	width: 80%;
-	margin: auto;
-}
-
-.footer {
-	background-color: #333;
-	color: #CCC;
-	font-size: .75em;
-	text-align: right;
-}
-
 /* <==> iPhone 4S and less && iPad Mini && iPad <==> */
 @media screen and (device-aspect-ratio: 3/4) {
 
@@ -124,26 +81,6 @@ section {
 		font-size: 7em;
 	}
 
-	.about {
-		font-size: 2em;
-	}
-
-	.about h1 {
-		text-align: center;
-	}
-
-	.wrap {
-		width: 100%;
-	}
-
-	section {
-		display: block;
-		width: 100%;
-	}
-
-	.footer {
-		font-size: 1.5em;
-	}
 }
 
 /* <==> iPhone 5 <==> */
@@ -159,28 +96,6 @@ section {
 
 	.logo {
 		font-size: 10em;
-	}
-
-	.about {
-		font-size: 3em;
-	}
-
-	.about h1 {
-		text-align: center;
-	}
-
-	.wrap {
-		width: 100%;
-	}
-
-	section {
-		display: block;
-		width: 100%;
-	}
-
-	.footer {
-		font-size: 2.5em;
-		text-align: center;
 	}
  
 }
