@@ -3,6 +3,10 @@
 # Let's run npm install 
 if hash npm 2>/dev/null; then
 	npm install
+	# If we don't have gulp installed, install gulp
+	if hash gulp 2>/dev/null; then
+		npm install -g gulp
+	fi
 else
 	echo 'NPM is needed! Install NPM!';
 	exit 1;
