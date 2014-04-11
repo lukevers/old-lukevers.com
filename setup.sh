@@ -2,12 +2,13 @@
 
 # Let's run npm install 
 if hash npm 2>/dev/null; then
+	echo 'Installing node modules needed'
 	npm install
 	# If we don't have gulp installed, install gulp
 	if hash gulp 2>/dev/null; then
-		echo 'Gulp is already installed, skipping...'
+		echo 'Gulp is already installed, skipping'
 	else
-		echo 'Installing gulp...'
+		echo 'Installing gulp'
 		npm install -g gulp
 	fi
 else
@@ -17,7 +18,7 @@ fi
 
 # Now let's run composer
 if hash composer 2>/dev/null; then
-	echo 'Running composer....'
+	echo 'Running composer'
 	composer install
 	composer update
 else
@@ -49,9 +50,11 @@ git remote add origin $origin
 #
 
 # Now let's update our README file
+echo 'Updating our README file'
 echo '#'$repo > README.md
 
 # Now let's update our package.json file
+echo 'Updating our package.json file'
 sed -i.bak 's/Template/'$repo'/g' package.json
 sed -i.bak 's/https:\/\/github.com\/ettio\/template/'$url'/g' package.json
 rm *.bak
