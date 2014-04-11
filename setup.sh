@@ -32,7 +32,7 @@ read name
 echo 'Enter the repository name:'
 read repo
 
-url='https://github.com/'$name'/'$repo'.git'
+url='https:\/\/github.com\/'$name'\/'$repo
 origin='git@github.com:'$name'/'$repo'.git'
 
 # Fix the origin remote
@@ -40,3 +40,18 @@ git remote rm origin
 echo 'Setting the remote `origin` to '$origin
 git remote add origin $origin
 
+# 
+# List of files that need to be changed
+#   - README.md
+#   - package.json 
+#     - "name"
+#     - "url"
+#
+
+# Now let's update our README file
+echo '#'$repo > README.md
+
+# Now let's update our package.json file
+sed -i.bak 's/Template/'$repo'/g' package.json
+sed -i.bak 's/https:\/\/github.com\/ettio\/template/'$url'/g' package.json
+rm *.bak
