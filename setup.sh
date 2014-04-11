@@ -58,3 +58,6 @@ echo 'Updating our package.json file'
 sed -i.bak 's/Template/'$repo'/g' package.json
 sed -i.bak 's/https:\/\/github.com\/ettio\/template/'$url'/g' package.json
 rm *.bak
+
+# Delete our setup.sh file now that we are done
+rm setup.sh
