@@ -48,7 +48,13 @@ Log::useFiles(storage_path().'/logs/laravel.log');
 
 App::error(function(Exception $exception, $code)
 {
+	Session::put('code', $code);
 	Log::error($exception);
+	switch ($code)
+	{
+		default:
+			return Response::view('errors.default', array(), $code);
+	}
 });
 
 /*

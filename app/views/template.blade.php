@@ -6,15 +6,14 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Title</title>
+    <title>Luke Evers</title>
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta property="og:title" content="Title" />
+    <meta property="og:title" content="Luke Evers" />
     <meta property="og:image" content="" />
-    <meta property="og:url" content="URL" />
-    <meta property="og:type" content="" />
+    <meta property="og:url" content="http://lukevers.com" />
     <meta property="og:description" content="Description" />
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />

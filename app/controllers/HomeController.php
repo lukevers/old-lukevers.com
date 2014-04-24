@@ -20,4 +20,9 @@ class HomeController extends BaseController {
 		return View::make('pages.index');
 	}
 
+	public function button()
+	{
+		return View::make('pages.github');
+	}
+
 }
