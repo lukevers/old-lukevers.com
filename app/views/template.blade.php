@@ -26,6 +26,8 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/apple-touch-icon-144x144.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/apple-touch-icon-152x152.png" />
 
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="/assets/css/styles.css">
     <script src="/assets/js/modernizr.min.js"></script>
 </head>

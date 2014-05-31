@@ -8,8 +8,13 @@
 |--------------------------------------------------------------------------
 */
 
-@white: #f6f6f6;
-@black: #333333;
+@white:		#f6f6f6;
+@black:		#333333;
+
+@base:		#75ABC2;
+@base2:		darken(spin(@base, 5), 5%);
+@base3:		#4887AB;
+@base4:		darken(@base3, 5%);
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +23,7 @@
 */
 
 @tablet: 768px;
+@mobile: 500px;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,45 +34,140 @@
 html, body {
 	height: 100%;
 	width: 100%;
-}
-
-body {
-	background-image: url(../img/trees.jpg);
-	background-size: cover;
-	text-align: center;
-}
-
-/*
-|--------------------------------------------------------------------------
-| Title
-|--------------------------------------------------------------------------
-*/
-
-.title {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
 	color: @white;
-	font-size: 64px;
-	position: fixed;
-	top: 1em;
-	margin: auto;
-	width: 100%;
+	overflow: hidden;
 
-	@media(max-width: @tablet) {
-		font-size: 32px;
+	@media (max-width: @tablet) {
+		overflow: visible;
 	}
 }
 
 /*
 |--------------------------------------------------------------------------
-| Bottom
+| Pulse -- FROM ANIMATE.CSS (http://daneden.github.io/animate.css/)
 |--------------------------------------------------------------------------
 */
 
-.bottom {
-	position: fixed;
-	bottom: 1em;
-	right: 1em;
 
-	@media(max-width: @tablet) {
-		margin: auto;
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Corners
+|--------------------------------------------------------------------------
+*/
+
+.corners {
+	width: 100%;
+	height: 100%;
+
+	.corner {
+		height: 50%;
+		width: 50%;
+		display: inline-block;
+		position: absolute;
+		display: table;
+		cursor: pointer;
+
+		@media(max-width: @tablet) {
+			width: 100%;
+			position: relative;
+		}
+
+		@media(max-width: @mobile) {
+			width: 100%;
+			height: 100%;
+		}
+
+		.cell {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+
+			.content {
+				font-size: 32px;
+
+				i {
+					font-size: 64px;
+				}
+			}
+
+			@media(min-width: @tablet) {
+				&:hover {
+					-webkit-animation-duration: 1s;
+					animation-duration: 1s;
+					-webkit-animation-fill-mode: both;
+					animation-fill-mode: both;
+					.pulse();
+				}
+			}
+		}
+
+		&.corner-top-left {
+			background-color: @base;
+			top: 0;
+			left: 0;
+		}
+
+		&.corner-top-right {
+			background-color: @base2;
+			top: 0;
+			right: 0;
+		}
+
+		&.corner-bottom-left {
+			background-color: @base3;
+			bottom: 0;
+			left: 0;
+		}
+
+		&.corner-bottom-right {
+			background-color: @base4;
+			bottom: 0;
+			right: 0;
+		}
 	}
 }
