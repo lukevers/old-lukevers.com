@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="corners">
-	<div class="corner corner-top-left">
+	<div class="corner corner-top-left" id="about">
 		<div class="cell">
 			<div class="content">
 				<i class="fa fa-child"></i>
@@ -12,7 +12,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="corner corner-top-right">
+	<div class="corner corner-top-right" id="blog">
 		<div class="cell">
 			<div class="content">
 				<i class="fa fa-pencil"></i>
@@ -21,7 +21,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="corner corner-bottom-left">
+	<div class="corner corner-bottom-left" id="projects">
 		<div class="cell">
 			<div class="content">
 				<i class="fa fa-desktop"></i>
@@ -32,7 +32,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="corner corner-bottom-right">
+	<div class="corner corner-bottom-right" id="contact">
 		<div class="cell">
 			<div class="content">
 				<i class="fa fa-send"></i>
