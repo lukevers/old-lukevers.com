@@ -21,6 +21,7 @@ gulp.task('css', ['less'], function() {
 	gulp.src([
 		_css+'bootstrap.min.css', 
 		_css+'font-awesome.min.css',
+		_css+'animation.css',
 		_css+'main.css'])
 		.pipe(concat('styles.css'))
 		.pipe(gulp.dest(css_));
@@ -30,6 +31,7 @@ gulp.task('js', function() {
 	gulp.src([_js+'jquery.min.js',
 		_js+'bootstrap.min.js',
 		_js+'jquery.retinise.min.js',
+		_js+'transition.js',
 		_js+'main.js'])
 		.pipe(concat('scripts.js'))
 		.pipe(gulp.dest(js_));

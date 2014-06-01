@@ -7,14 +7,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Luke Evers</title>
-    <meta name="description" content="Description">
+    <meta name="description" content="Web developer">
     <meta name="viewport" content="width=device-width">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta property="og:title" content="Luke Evers" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="http://lukevers.com" />
-    <meta property="og:description" content="Description" />
+    <meta property="og:image" content="http://lukevers.com/assets/images/car.jpg" />
+    <meta property="og:url" content="http://lukevers.com/" />
+    <meta property="og:description" content="Web developer" />
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
@@ -25,7 +25,7 @@
     <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/apple-touch-icon-120x120.png" />
     <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/apple-touch-icon-144x144.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/apple-touch-icon-152x152.png" />
-
+	
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="/assets/css/styles.css">
